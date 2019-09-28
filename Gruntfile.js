@@ -23,6 +23,11 @@ module.exports = function (grunt) {
                 package: {
                     src: 'package.json'
                 }
+            },
+            githooks: {
+                all: {
+                    'pre-commit': 'lint'
+                }
             }
         }
     );
@@ -30,6 +35,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-jslint');
     grunt.loadNpmTasks('grunt-jsonlint');
+    grunt.loadNpmTasks('grunt-githooks');
     grunt.loadTasks('tasks/');
 
     grunt.registerTask('lint', ['jslint', 'jsonlint', 'fixpack']);
