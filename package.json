@@ -1,7 +1,7 @@
 {
   "name": "grunt-fixpack",
   "description": "Validate your package.json file with Fixpack",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Pierre Rudloff",
     "email": "contact@rudloff.pro",
