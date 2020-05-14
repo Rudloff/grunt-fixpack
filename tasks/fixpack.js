@@ -1,7 +1,7 @@
-/*jslint node: true */
+/*jslint node, es6 */
 'use strict';
-var fixpack = require('fixpack');
-var path = require('path');
+const fixpack = require('fixpack');
+const path = require('path');
 
 module.exports = function (grunt) {
     grunt.registerMultiTask('fixpack', 'Validate your package.json file with Fixpack', function () {

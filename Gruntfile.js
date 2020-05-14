@@ -20,7 +20,7 @@ module.exports = function (grunt) {
                 }
             },
             fixpack: {
-                package: {
+                package: {
                     src: 'package.json'
                 }
             },
