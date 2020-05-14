@@ -11,11 +11,11 @@
     "url": "https://github.com/Rudloff/grunt-fixpack/issues"
   },
   "dependencies": {
-    "fixpack": "~2.3.0"
+    "fixpack": "~2.3.0",
+    "husky": "^4.2.5"
   },
   "devDependencies": {
     "grunt": "^1.1.0",
-    "grunt-githooks": "^0.6.0",
     "grunt-jslint": "^1.1.15",
     "grunt-jsonlint": "^2.1.2"
   },
@@ -23,6 +23,11 @@
     "node": ">= 0.8.0"
   },
   "homepage": "https://github.com/Rudloff/grunt-fixpack",
+  "husky": {
+    "hooks": {
+      "pre-commit": "grunt lint"
+    }
+  },
   "keywords": [
     "gruntplugin"
   ],
@@ -37,8 +42,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Rudloff/grunt-fixpack.git"
-  },
-  "scripts": {
-    "prepare": "grunt githooks"
   }
 }
