@@ -1,7 +1,7 @@
 {
   "name": "grunt-fixpack",
   "description": "Validate your package.json file with Fixpack",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Pierre Rudloff",
     "email": "contact@rudloff.pro",
@@ -11,13 +11,13 @@
     "url": "https://github.com/Rudloff/grunt-fixpack/issues"
   },
   "dependencies": {
-    "fixpack": "^3.0.6",
-    "husky": "^4.2.5"
+    "fixpack": "^3.0.6"
   },
   "devDependencies": {
     "grunt": "^1.1.0",
     "grunt-jslint": "^1.1.15",
-    "grunt-jsonlint": "^2.1.2"
+    "grunt-jsonlint": "^2.1.2",
+    "husky": "^4.2.5"
   },
   "engines": {
     "node": ">= 0.8.0"
