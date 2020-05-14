@@ -18,6 +18,11 @@ module.exports = function (grunt) {
                         format: true
                     }
                 }
+            },
+            fixpack: {
+                package: {
+                    src: 'package.json'
+                }
             }
         }
     );
@@ -25,6 +30,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-jslint');
     grunt.loadNpmTasks('grunt-jsonlint');
+    grunt.loadTasks('tasks/');
 
-    grunt.registerTask('lint', ['jslint', 'jsonlint']);
+    grunt.registerTask('lint', ['jslint', 'jsonlint', 'fixpack']);
 };
