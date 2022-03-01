@@ -16,7 +16,6 @@
   "devDependencies": {
     "grunt": "^1.1.0",
     "grunt-jslint": "^1.1.15",
-    "grunt-jsonlint": "^2.1.2",
     "husky": "^4.2.5"
   },
   "engines": {
